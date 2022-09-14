@@ -1,2 +1,21 @@
-# Sélectionner des couches par leur nom
+# LIBRAIRIES PyQGIS A IMPORTER
+from qgis.core import *
+import qgis.utils
+
+# SÉLECTIONNER LES COUCHES PAR LEUR NOM
 QgsProject.instance().mapLayersByName('nom_couche')[0]
+
+#CRÉER UNE COUCHE VECTEUR
+QgsVectorLayer(contenu, "nom", "ogr")
+
+#AJOUTER UNE COUCHE VECTEUR AU PROJET
+QgsProject.instance().addMapLayer(nom_couche)
+
+# UTILISER UN PLUGIN QGIS
+import processing
+paramètres_plugin = {
+                     'NOM_PARAM': valeur,
+                     'NOM_PARAM2': valeur,
+                     ...
+                     }
+processing.run("nom_plugin", paramètres_plugin)
