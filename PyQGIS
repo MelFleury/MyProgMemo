@@ -1,0 +1,2 @@
+# Sélectionner des couches par leur nom
+QgsProject.instance().mapLayersByName('nom_couche')[0]
