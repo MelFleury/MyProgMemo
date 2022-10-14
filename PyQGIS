@@ -5,10 +5,19 @@ import qgis.utils
 # SÉLECTIONNER LES COUCHES PAR LEUR NOM
 QgsProject.instance().mapLayersByName('nom_couche')[0]
 
-#CRÉER UNE COUCHE VECTEUR
+# CRÉER UNE COUCHE VECTEUR
 QgsVectorLayer(contenu, "nom", "ogr")
 
-#AJOUTER UNE COUCHE VECTEUR AU PROJET
+# CRÉER UN FICHIER CSV
+csv_file = QgsVectorFileWriter.writeAsVectorFormat(
+  nom_couche,
+  chemin_fichier_csv,
+  "utf-8",
+  nom_couche.crs(),
+  'CSV'
+  )
+
+# AJOUTER UNE COUCHE VECTEUR AU PROJET
 QgsProject.instance().addMapLayer(nom_couche)
 
 # UTILISER UN PLUGIN QGIS
@@ -19,3 +28,32 @@ paramètres_plugin = {
                      ...
                      }
 processing.run("nom_plugin", paramètres_plugin)
+
+# AFFICHER TOUTES LES COUCHES D'UN GROUPE
+group_name = 'nom_groupe'
+root = QgsProject.instance().layerTreeRoot()
+group = root.findGroup(group_name)
+layers_name = [layer.name() for layer in group.children()]
+layers = [layer.layer() for layer in group.children()]
+
+# AJOUTER UN NOUVEL ATTRIBUT A UNE COUCHE
+nom_couche.dataProvider().addAttributes([QgsField('nom_attribut', *type_attribut)])   *QVariant.double, QVariant.integer,...
+nom_couche.updateFields()
+
+# REMPLIR DE VALEUR UN ATTRIBUT D'UNE COUCHE
+nom_couche.startEditing()
+expression = QgsExpression(*'expression')   *'$area'
+context = QgsExpressionContext() #Specifier quelle couche va détenir cette expression
+context.appendScopes(
+  QgsExpressionContextUtils.globalProjectLayerScopes(nom_couche)
+)
+for f in nom_couche.getFeatures(): #Boucle qui a accès à tous les attributs de la couche
+  context.setFeature(f)
+  f['nom_attribut'] = expression.evaluate(context)
+  [ f['nom_attribut'] = round(f['nom_attribut'],2) ] #Obtenir des valeurs d'aire approchées à deux chiffres significatifs (optionel)
+  nom_couche.updateFeature(f) #MAJ de l'attribut
+nom_couche.commitChanges()
+
+#AFFICHER AUTOMATIQUEMENT LA TABLE ATTRIBUTAIRE
+iface.setActiveLayer(nom_couche)#cibler la couche dont on veut voir apparaître sa table attributaire
+attribute_table = iface.showAttributeTable(iface.activeLayer())
