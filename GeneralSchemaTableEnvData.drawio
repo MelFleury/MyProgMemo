@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0" version="29.5.2">
+  <diagram name="Page-1" id="FKKlx_-KeZKQQFVQKd67">
+    <mxGraphModel dx="1426" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-16" edge="1" parent="1" source="-MjuJhtiFY7XagV1hbbM-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="-MjuJhtiFY7XagV1hbbM-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="330" />
+              <mxPoint x="310" y="280" />
+              <mxPoint x="220" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-2" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#000000;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.iot_core_device_location;" value="" vertex="1">
+          <mxGeometry height="158" width="158" x="330" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-6" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="160" width="280" x="80" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-8" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#f8cecc;align=center;strokeColor=#b85450;" value="&lt;div align=&quot;center&quot;&gt;&lt;b&gt;&lt;span&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Anthropology&lt;/font&gt;&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="180" x="130" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Population density&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="150" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-10" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
+          <mxGeometry height="160" width="280" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-11" edge="1" parent="1" source="-MjuJhtiFY7XagV1hbbM-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.593;entryY=0.956;entryDx=0;entryDy=0;entryPerimeter=0;" target="-MjuJhtiFY7XagV1hbbM-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-12" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#d5e8d4;align=center;strokeColor=#82b366;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;&lt;font&gt;Climatology&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="180" x="530" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Altitude&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="540" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Temperature&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="610" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-17" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="160" width="280" x="280" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-18" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#dae8fc;align=center;strokeColor=#6c8ebf;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Coordinates info&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="180" x="335" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-19" edge="1" parent="1" source="-MjuJhtiFY7XagV1hbbM-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.454;entryY=0.075;entryDx=0;entryDy=0;entryPerimeter=0;" target="-MjuJhtiFY7XagV1hbbM-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="409" y="410" />
+              <mxPoint x="407" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Duplication&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="340" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Database origin&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="440" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="-MjuJhtiFY7XagV1hbbM-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Land-use&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="250" y="170" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
